@@ -137,6 +137,7 @@ functions anyway. */
 #define INCLUDE_eTaskGetState					1
 #define INCLUDE_xSemaphoreGetMutexHolder		1
 #define INCLUDE_xTimerPendFunctionCall			1
+#define configCPU_CLOCK_HZ 1
 
 /* It is a good idea to define configASSERT() while developing.  configASSERT()
 uses the same semantics as the standard C assert() macro. */

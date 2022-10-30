@@ -20,7 +20,7 @@ fn main() {
         let mut i = 0;
         loop {
             println!("Hello from Task! {}", i);
-            CurrentTask::delay(Duration::ms(1000));
+            //CurrentTask::delay(Duration::ms(1000));
             i = i + 1;
         }
     }).unwrap();
