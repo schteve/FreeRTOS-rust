@@ -59,7 +59,7 @@ fn main() {
         ).unwrap();
     }
 
-    b.compile().unwrap_or_else(|e| { panic!(e.to_string()) });
+    b.compile().unwrap_or_else(|e| panic!("{}", e.to_string()));
 }
 
 /// Print relevant environment variables.
