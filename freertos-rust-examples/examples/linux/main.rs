@@ -4,7 +4,7 @@ use freertos_rust::*;
 static GLOBAL: FreeRtosAllocator = FreeRtosAllocator;
 
 
-fn main() {
+fn main() -> ! {
     let x = Box::new(15);
     println!("Boxed int '{}' (allocator test)", x);
 
@@ -29,9 +29,6 @@ fn main() {
     // println!("Free Memory: {}!", free);
     println!("Starting scheduler");
     FreeRtosUtils::start_scheduler();
-    loop {
-        println!("Loop forever!");
-    }
 }
 
 #[test]
